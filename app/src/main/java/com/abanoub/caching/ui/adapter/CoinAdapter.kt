@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.abanoub.caching.data.remote.Coin
+import com.abanoub.caching.data.remote.model.Coin
 import com.abanoub.caching.databinding.CoinItemBinding
 import com.bumptech.glide.Glide
 

@@ -1,7 +1,12 @@
 package com.abanoub.caching.di
 
+import android.app.Application
+import androidx.room.Room
+import com.abanoub.caching.data.local.CoinDao
+import com.abanoub.caching.data.local.CoinsDatabase
 import com.abanoub.caching.data.remote.api.CoinApi
 import com.abanoub.caching.data.remote.api.CoinApi.Companion.BASE_URL
+import com.abanoub.caching.utils.Constants.COINS_DATABASE_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,5 +31,11 @@ object AppModule {
     @Singleton
     fun provideCoinApi(retrofit: Retrofit): CoinApi =
         retrofit.create(CoinApi::class.java)
+
+    @Provides
+    @Singleton
+    fun provideDatabase(app: Application): CoinsDatabase =
+        Room.databaseBuilder(app, CoinsDatabase::class.java, COINS_DATABASE_NAME)
+            .build()
 
 }

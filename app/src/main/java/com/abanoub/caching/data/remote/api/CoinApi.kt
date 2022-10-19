@@ -1,6 +1,6 @@
 package com.abanoub.caching.data.remote.api
 
-import com.abanoub.caching.data.remote.model.Coin
+import com.abanoub.caching.data.entity.Coin
 import retrofit2.http.GET
 
 interface CoinApi {

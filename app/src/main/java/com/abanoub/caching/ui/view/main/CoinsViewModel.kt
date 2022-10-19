@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.abanoub.caching.data.remote.api.CoinApi
-import com.abanoub.caching.data.remote.model.Coin
+import com.abanoub.caching.data.entity.Coin
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

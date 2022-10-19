@@ -1,4 +1,4 @@
-package com.abanoub.caching.data.remote
+package com.abanoub.caching.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 

@@ -2,12 +2,13 @@
 Simple Offline Caching With NetworkBoundResource + Kotlin Coroutines (Flow)
 <br>
 ## Description
-Android app that fetch data from a REST API using Retrofit, and cache this data in Room for offline use.
+Android app that fetch fake data (crypto coins data) from a REST API using Retrofit, and cache this data in Room for offline use.
 <br>
 ## Built with:
 - Kotlin
 - MVVM (Model-View-ViewModel)
 - ViewModel + LiveData
+- Repository Pattern
 - ViewBinding
 - Retrofit + GSON
 - Room
